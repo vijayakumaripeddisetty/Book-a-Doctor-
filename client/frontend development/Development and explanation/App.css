@@ -1,0 +1,1167 @@
+/* ===========================================
+   GLOBAL STYLES
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+}
+
+.app-wrapper{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar{
+    background:#fff !important;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:700;
+    color:#0d6efd !important;
+}
+
+.nav-link{
+    font-size:17px;
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0d6efd !important;
+}
+
+/* ===========================================
+   HERO SECTION
+=========================================== */
+
+.hero-section{
+    padding:80px 0;
+}
+
+.hero-section h1{
+    font-size:52px;
+    font-weight:700;
+    color:#0d6efd;
+}
+
+.hero-section p{
+    font-size:20px;
+    margin:25px 0;
+    color:#666;
+    line-height:1.7;
+}
+
+.hero-section .btn{
+    padding:12px 35px;
+    font-size:18px;
+    border-radius:8px;
+}
+
+.hero-image{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================================
+   COMMON BUTTONS
+=========================================== */
+
+.btn-primary{
+    border:none;
+    border-radius:8px;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    transition:.3s;
+}
+
+.btn-success{
+    border:none;
+}
+
+.btn-danger{
+    border:none;
+}
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.card{
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+/* ===========================================
+   SECTION TITLE
+=========================================== */
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#0d6efd;
+}
+/* ===========================================
+   ABOUT SECTION
+=========================================== */
+
+.about-section{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.about-section h2{
+    font-size:38px;
+    font-weight:700;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+.about-section h4{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.about-section p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ===========================================
+   SERVICES SECTION
+=========================================== */
+
+.services-section{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.services-section .card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.services-section .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.services-section .card-title{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.services-section .card-text{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ===========================================
+   WHY CHOOSE US
+=========================================== */
+
+.why-section{
+    background:#0d6efd;
+    color:#fff;
+    padding:80px 0;
+}
+
+.why-section h2{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:50px;
+}
+
+.why-box{
+    text-align:center;
+    padding:20px;
+}
+
+.why-box h3{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.why-box p{
+    font-size:18px;
+}
+
+/* ===========================================
+   CONTACT SECTION
+=========================================== */
+
+.contact-section{
+    padding:80px 0;
+    background:#ffffff;
+}
+
+.contact-section h2{
+    text-align:center;
+    font-size:38px;
+    color:#0d6efd;
+    margin-bottom:40px;
+    font-weight:700;
+}
+
+.contact-section h5{
+    margin-top:20px;
+    color:#0d6efd;
+    font-weight:600;
+}
+
+.contact-section p{
+    color:#666;
+}
+
+.contact-section iframe{
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+.footer{
+    margin-top:auto;
+    background:#212529;
+    color:#fff;
+    padding:25px 0;
+    text-align:center;
+}
+
+.footer p{
+    margin:0;
+    font-size:16px;
+}
+
+.footer a{
+    color:#0dcaf0;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================================
+   UTILITIES
+=========================================== */
+
+.shadow-sm{
+    box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.rounded{
+    border-radius:12px!important;
+}
+
+.text-primary{
+    color:#0d6efd!important;
+}
+
+.bg-light{
+    background:#f8f9fa!important;
+}
+
+.bg-primary{
+    background:#0d6efd!important;
+}
+
+.text-white{
+    color:#fff!important;
+}
+/* ===========================================
+   LOGIN & REGISTER PAGE
+=========================================== */
+
+.auth-container{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#e3f2fd,#ffffff);
+    padding:40px 15px;
+}
+
+.auth-card{
+    width:100%;
+    max-width:500px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    overflow:hidden;
+    background:#fff;
+}
+
+.auth-card .card-body{
+    padding:40px;
+}
+
+.auth-title{
+    font-size:32px;
+    font-weight:700;
+    color:#0d6efd;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.auth-subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+.auth-icon{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0d6efd;
+}
+
+.auth-card .form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.auth-card .form-control,
+.auth-card .form-select{
+    border-radius:8px;
+    height:45px;
+    border:1px solid #ced4da;
+    transition:all .3s ease;
+}
+
+.auth-card .form-control:focus,
+.auth-card .form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+}
+
+.auth-card .btn{
+    width:100%;
+    height:48px;
+    font-size:17px;
+    font-weight:600;
+    border-radius:8px;
+}
+
+.auth-card .btn:hover{
+    transform:translateY(-2px);
+}
+
+.auth-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.auth-link a{
+    color:#0d6efd;
+    font-weight:600;
+}
+
+.auth-link a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================================
+   MDB INPUT CUSTOMIZATION
+=========================================== */
+
+.form-outline{
+    margin-bottom:20px;
+}
+
+.form-outline input{
+    border-radius:8px !important;
+}
+
+.form-outline input:focus{
+    border-color:#0d6efd !important;
+    box-shadow:0 0 8px rgba(13,110,253,.25) !important;
+}
+
+/* ===========================================
+   SPINNER
+=========================================== */
+
+.spinner-border{
+    width:2rem;
+    height:2rem;
+}
+
+/* ===========================================
+   VALIDATION
+=========================================== */
+
+.text-danger{
+    font-size:14px;
+}
+
+.invalid-feedback{
+    display:block;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+    .auth-card{
+        margin:20px;
+    }
+
+    .auth-card .card-body{
+        padding:25px;
+    }
+
+    .auth-title{
+        font-size:28px;
+    }
+
+    .auth-subtitle{
+        font-size:15px;
+    }
+}
+/* =====================================================
+   USER DASHBOARD
+===================================================== */
+
+.dashboard-container{
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+    background:#212529;
+    color:#fff;
+    min-height:100vh;
+    padding:25px 15px;
+}
+
+.sidebar h3{
+    text-align:center;
+    margin-bottom:35px;
+    font-weight:700;
+    color:#fff;
+}
+
+.sidebar .btn{
+    width:100%;
+    margin-bottom:15px;
+    text-align:left;
+    border-radius:8px;
+    font-weight:500;
+}
+
+.sidebar .btn i{
+    margin-right:10px;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.dashboard-header{
+    background:#fff;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dashboard-header h3{
+    margin:0;
+    color:#0d6efd;
+    font-weight:700;
+}
+
+.dashboard-header small{
+    color:#777;
+}
+
+/* ===========================
+   Notification Bell
+=========================== */
+
+.notification-btn{
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+
+.notification-btn i{
+    font-size:28px;
+    color:#0d6efd;
+}
+
+.notification-btn:hover{
+    transform:scale(1.08);
+    transition:.3s;
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.dashboard-body{
+    padding:30px;
+}
+
+.dashboard-title{
+    color:#0d6efd;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.dashboard-card{
+    border:none;
+    border-radius:12px;
+    transition:.3s;
+    overflow:hidden;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.dashboard-card .card-title{
+    font-size:22px;
+    font-weight:600;
+    color:#0d6efd;
+}
+
+.dashboard-card p{
+    color:#666;
+}
+
+/* ===========================
+   Doctor Card
+=========================== */
+
+.doctor-card{
+    border-radius:15px;
+    transition:.3s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-8px);
+}
+
+.doctor-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+    display:block;
+}
+
+.doctor-card h4{
+    margin-top:15px;
+    color:#0d6efd;
+    font-weight:700;
+}
+
+.doctor-card p{
+    margin-bottom:8px;
+    color:#555;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.book-btn{
+    width:100%;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* ===========================
+   Loading Spinner
+=========================== */
+
+.loading-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:300px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:991px){
+
+    .sidebar{
+        min-height:auto;
+    }
+
+    .dashboard-body{
+        padding:20px;
+    }
+
+    .dashboard-header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .doctor-card{
+        margin-bottom:20px;
+    }
+
+    .dashboard-title{
+        font-size:26px;
+    }
+}
+/* =====================================================
+   ADMIN DASHBOARD
+===================================================== */
+
+.admin-container{
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+/* ===========================
+   Admin Sidebar
+=========================== */
+
+.admin-sidebar{
+    background:#1f2937;
+    min-height:100vh;
+    padding:25px;
+    color:#fff;
+}
+
+.admin-sidebar h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-weight:700;
+}
+
+.admin-sidebar .btn{
+    width:100%;
+    margin-bottom:15px;
+    text-align:left;
+    font-weight:500;
+    border-radius:8px;
+}
+
+.admin-sidebar .btn i{
+    margin-right:10px;
+}
+
+/* ===========================
+   Admin Header
+=========================== */
+
+.admin-header{
+    background:#ffffff;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.admin-header h3{
+    color:#0d6efd;
+    font-weight:700;
+    margin:0;
+}
+
+.admin-header small{
+    color:#666;
+}
+
+/* ===========================
+   Dashboard Body
+=========================== */
+
+.admin-body{
+    padding:30px;
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+.table{
+    background:#fff;
+}
+
+.table th{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table td{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table-hover tbody tr:hover{
+    background:#eef5ff;
+}
+
+/* ===========================
+   Status Badges
+=========================== */
+
+.badge{
+    padding:8px 14px;
+    font-size:14px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.bg-success{
+    background:#198754 !important;
+}
+
+.bg-danger{
+    background:#dc3545 !important;
+}
+
+.bg-warning{
+    background:#ffc107 !important;
+    color:#212529 !important;
+}
+
+/* ===========================
+   Doctor Action Buttons
+=========================== */
+
+.approve-btn{
+    background:#198754;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:8px 16px;
+    margin-right:5px;
+}
+
+.approve-btn:hover{
+    background:#157347;
+}
+
+.reject-btn{
+    background:#dc3545;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:8px 16px;
+}
+
+.reject-btn:hover{
+    background:#bb2d3b;
+}
+
+/* ===========================
+   Notification Page
+=========================== */
+
+.notification-card{
+    border:none;
+    border-left:5px solid #0d6efd;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.notification-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 15px rgba(0,0,0,.1);
+}
+
+.notification-card h5{
+    margin-bottom:10px;
+    color:#0d6efd;
+}
+
+.notification-card small{
+    color:#777;
+}
+
+.notification-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Empty State
+=========================== */
+
+.empty-box{
+    background:#fff;
+    padding:40px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.empty-box h4{
+    color:#6c757d;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .admin-header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .admin-body{
+        padding:15px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+    .approve-btn,
+    .reject-btn{
+        width:100%;
+        margin-bottom:8px;
+    }
+}
+/* ==========================================
+   DOCTOR BOOKING MODAL
+========================================== */
+
+.modal-content{
+    border-radius:15px;
+    border:none;
+}
+
+.modal-header{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.modal-title{
+    font-weight:600;
+}
+
+.modal-body{
+    padding:25px;
+}
+
+.modal-footer{
+    border-top:none;
+}
+
+/* ==========================================
+   FORM ELEMENTS
+========================================== */
+
+.form-control,
+.form-select{
+    border-radius:8px;
+    border:1px solid #ced4da;
+    padding:10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 0 0.2rem rgba(13,110,253,.2);
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* ==========================================
+   FILE INPUT
+========================================== */
+
+input[type="file"]{
+    padding:10px;
+    border:1px solid #ced4da;
+    border-radius:8px;
+    background:#fff;
+    cursor:pointer;
+}
+
+/* ==========================================
+   APPOINTMENT TABLE
+========================================== */
+
+.appointment-table{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.appointment-table th{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.appointment-table td{
+    vertical-align:middle;
+}
+
+/* ==========================================
+   ALERTS
+========================================== */
+
+.alert{
+    border-radius:10px;
+    font-weight:500;
+}
+
+/* ==========================================
+   SPINNER
+========================================== */
+
+.spinner-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:250px;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+.fade-in{
+    animation:fadeIn .5s ease-in-out;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.scale-up{
+    animation:scaleUp .3s ease;
+}
+
+@keyframes scaleUp{
+
+    from{
+        transform:scale(.95);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+/* ==========================================
+   UTILITIES
+========================================== */
+
+.pointer{
+    cursor:pointer;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.p-20{
+    padding:20px;
+}
+
+.rounded-10{
+    border-radius:10px;
+}
+
+.shadow-custom{
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    background:#212529;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.footer p{
+    margin:0;
+    font-size:15px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .hero-section{
+        text-align:center;
+    }
+
+    .hero-section img{
+        margin-bottom:30px;
+    }
+
+    .dashboard-header,
+    .admin-header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar-brand{
+        font-size:24px;
+    }
+
+    .hero-section h1{
+        font-size:36px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .card{
+        margin-bottom:20px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-section{
+        padding:40px 0;
+    }
+
+    .hero-section h1{
+        font-size:30px;
+    }
+
+    .dashboard-body,
+    .admin-body{
+        padding:15px;
+    }
+
+    .modal-body{
+        padding:15px;
+    }
+
+}

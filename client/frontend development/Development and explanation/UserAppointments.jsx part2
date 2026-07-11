@@ -1,0 +1,98 @@
+            <>
+              {appointments.length > 0 ? (
+
+                <Table
+                  striped
+                  bordered
+                  hover
+                  responsive
+                >
+                  <thead className="table-dark">
+
+                    <tr>
+                      <th>#</th>
+                      <th>Appointment ID</th>
+                      <th>User Name</th>
+                      <th>Doctor Name</th>
+                      <th>Date & Time</th>
+                      <th>Status</th>
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+
+                    {appointments.map(
+                      (appointment, index) => (
+
+                        <tr key={appointment._id}>
+
+                          <td>{index + 1}</td>
+
+                          <td>
+                            {appointment._id}
+                          </td>
+
+                          <td>
+                            {appointment.userName}
+                          </td>
+
+                          <td>
+                            Dr. {appointment.doctorName}
+                          </td>
+
+                          <td>
+                            {new Date(
+                              appointment.date
+                            ).toLocaleString()}
+                          </td>
+
+                          <td>
+
+                            <span
+                              className={`badge ${
+                                appointment.status ===
+                                "Approved"
+                                  ? "bg-success"
+                                  : appointment.status ===
+                                    "Rejected"
+                                  ? "bg-danger"
+                                  : "bg-warning text-dark"
+                              }`}
+                            >
+                              {appointment.status}
+                            </span>
+
+                          </td>
+
+                        </tr>
+
+                      )
+                    )}
+
+                  </tbody>
+
+                </Table>
+
+              ) : (
+
+                <Alert
+                  variant="info"
+                  className="text-center"
+                >
+                  No Appointments Found
+                </Alert>
+
+              )}
+            </>
+          )}
+
+        </Card.Body>
+
+      </Card>
+
+    </Container>
+  );
+};
+
+export default UserAppointments;

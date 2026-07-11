@@ -1,0 +1,132 @@
+      {/* ================= Booking Modal ================= */}
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        centered
+        size="lg"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>
+            Book Appointment
+          </Modal.Title>
+        </Modal.Header>
+
+        <Form onSubmit={handleBook}>
+
+          <Modal.Body>
+
+            <Row>
+
+              <Col md={6}>
+
+                <h5 className="text-primary mb-3">
+                  Doctor Details
+                </h5>
+
+                <p>
+                  <strong>Name :</strong>
+                  {" "}Dr. {doctor.fullName}
+                </p>
+
+                <p>
+                  <strong>Specialization :</strong>
+                  {" "}{doctor.specialization}
+                </p>
+
+                <p>
+                  <strong>Experience :</strong>
+                  {" "}{doctor.experience} Years
+                </p>
+
+                <p>
+                  <strong>Consultation Fee :</strong>
+                  {" "}₹ {doctor.fees}
+                </p>
+
+                <p>
+                  <strong>Available Timings :</strong>
+                  {" "}{doctor.timings}
+                </p>
+
+              </Col>
+
+              <Col md={6}>
+
+                <Form.Group className="mb-3">
+
+                  <Form.Label>
+                    Appointment Date & Time
+                  </Form.Label>
+
+                  <Form.Control
+                    type="datetime-local"
+                    min={today}
+                    value={dateTime}
+                    onChange={(e) =>
+                      setDateTime(e.target.value)
+                    }
+                    required
+                  />
+
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+
+                  <Form.Label>
+                    Upload Medical Document
+                  </Form.Label>
+
+                  <Form.Control
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    onChange={(e) =>
+                      setDocumentFile(e.target.files[0])
+                    }
+                    required
+                  />
+
+                </Form.Group>
+
+                <div className="alert alert-info">
+
+                  Please upload your prescription,
+                  medical report, or any relevant
+                  document before booking your
+                  appointment.
+
+                </div>
+
+              </Col>
+
+            </Row>
+
+          </Modal.Body>
+
+          <Modal.Footer>
+
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+            >
+              Cancel
+            </Button>
+
+            <Button
+              variant="success"
+              type="submit"
+            >
+              Confirm Booking
+            </Button>
+
+          </Modal.Footer>
+
+        </Form>
+
+      </Modal>
+
+    </>
+  );
+};
+
+export default DoctorList;

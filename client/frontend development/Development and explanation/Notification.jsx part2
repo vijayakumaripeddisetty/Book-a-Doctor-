@@ -1,0 +1,73 @@
+    {
+      key: "2",
+      label: "Read Notifications",
+
+      children: (
+        <>
+          <div className="text-end mb-3">
+
+            <Button
+              variant="danger"
+              onClick={deleteAllRead}
+            >
+              Delete All
+            </Button>
+
+          </div>
+
+          {user?.seennotification?.length > 0 ? (
+
+            user.seennotification.map((notify, index) => (
+
+              <Card
+                key={index}
+                className="mb-3 shadow-sm"
+              >
+                <Card.Body>
+
+                  <h5>
+                    {notify.message}
+                  </h5>
+
+                </Card.Body>
+
+              </Card>
+
+            ))
+
+          ) : (
+
+            <Card>
+
+              <Card.Body className="text-center">
+
+                No Read Notifications
+
+              </Card.Body>
+
+            </Card>
+
+          )}
+
+        </>
+      ),
+    },
+  ];
+
+  return (
+    <div className="mt-3">
+
+      <h3 className="mb-4">
+        Notifications
+      </h3>
+
+      <Tabs
+        defaultActiveKey="1"
+        items={items}
+      />
+
+    </div>
+  );
+};
+
+export default Notification;

@@ -1,0 +1,146 @@
+                {/* ===============================
+                    Personal Details
+                =============================== */}
+
+                <Row>
+                  <Col md={12}>
+                    <h4 className="mb-3 text-secondary">
+                      Personal Details
+                    </h4>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Full Name"
+                      name="fullName"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter full name",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="Enter full name" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Phone"
+                      name="phone"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter phone number",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="Enter phone number" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Email"
+                      name="email"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter email",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="Enter email" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Address"
+                      name="address"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter address",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="Enter address" />
+                    </Form.Item>
+                  </Col>
+                </Row>
+
+                {/* ===============================
+                    Professional Details
+                =============================== */}
+
+                <Row className="mt-3">
+                  <Col md={12}>
+                    <h4 className="mb-3 text-secondary">
+                      Professional Details
+                    </h4>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Specialization"
+                      name="specialization"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter specialization",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="e.g. Cardiologist" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Experience (Years)"
+                      name="experience"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter experience",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="e.g. 10" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Consultation Fees"
+                      name="fees"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please enter consultation fee",
+                        },
+                      ]}
+                    >
+                      <Input placeholder="e.g. 500" />
+                    </Form.Item>
+                  </Col>
+
+                  <Col md={6}>
+                    <Form.Item
+                      label="Available Timings"
+                      name="timings"
+                      rules={[
+                        {
+                          required: true,
+                          message: "Please select available timings",
+                        },
+                      ]}
+                    >
+                      <RangePicker
+                        format="HH:mm"
+                        minuteStep={15}
+                      />
+                    </Form.Item>
+                  </Col>
+                </Row>

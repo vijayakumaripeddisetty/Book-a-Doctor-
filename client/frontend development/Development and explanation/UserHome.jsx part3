@@ -1,0 +1,103 @@
+              <>
+                {/* ================= HOME ================= */}
+
+                {activeMenuItem === "home" && (
+                  <>
+                    <h3 className="mb-4">
+                      Available Doctors
+                    </h3>
+
+                    <Row>
+
+                      {doctors.length > 0 ? (
+                        doctors.map((doctor) => (
+                          <Col
+                            lg={4}
+                            md={6}
+                            sm={12}
+                            className="mb-4"
+                            key={doctor._id}
+                          >
+                            <DoctorList
+                              doctor={doctor}
+                              userdata={userdata}
+                              userDoctorId={userdata?._id}
+                            />
+                          </Col>
+                        ))
+                      ) : (
+                        <Col>
+                          <Card className="shadow-sm">
+                            <Card.Body className="text-center">
+                              <h5>No Doctors Available</h5>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      )}
+
+                    </Row>
+                  </>
+                )}
+
+                {/* ================= APPOINTMENTS ================= */}
+
+                {activeMenuItem === "appointments" && (
+                  <>
+                    <Card className="shadow-sm">
+                      <Card.Body>
+
+                        <h3 className="mb-3">
+                          My Appointments
+                        </h3>
+
+                        <p>
+                          Click the button below to view all your
+                          booked appointments.
+                        </p>
+
+                        <Button
+                          variant="primary"
+                          onClick={() =>
+                            navigate(
+                              `/userappointments/${userdata?._id}`
+                            )
+                          }
+                        >
+                          View Appointments
+                        </Button>
+
+                      </Card.Body>
+                    </Card>
+                  </>
+                )}
+
+                {/* ================= APPLY DOCTOR ================= */}
+
+                {activeMenuItem === "applydoctor" && (
+                  <ApplyDoctor
+                    userId={userdata?._id}
+                  />
+                )}
+
+                {/* ================= NOTIFICATIONS ================= */}
+
+                {activeMenuItem === "notification" && (
+                  <Notification />
+                )}
+              </>
+            )}
+
+          </div>
+
+        </Col>
+
+      </Row>
+ </Col>
+
+      </Row>
+
+    </Container>
+  );
+};
+
+export default UserHome;

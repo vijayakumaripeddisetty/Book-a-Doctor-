@@ -1,0 +1,118 @@
+  return (
+    <>
+      {/* ================= Doctor Card ================= */}
+
+      <Card className="shadow border-0 h-100">
+
+        <Card.Body>
+
+          <div className="text-center mb-3">
+
+            <img
+              src={
+                doctor.profileImage
+                  ? `http://localhost:8001/${doctor.profileImage}`
+                  : "https://via.placeholder.com/150"
+              }
+              alt="Doctor"
+              className="img-fluid rounded-circle"
+              style={{
+                width: "120px",
+                height: "120px",
+                objectFit: "cover",
+              }}
+            />
+
+          </div>
+
+          <Card.Title className="text-center fw-bold text-primary">
+            Dr. {doctor.fullName}
+          </Card.Title>
+
+          <hr />
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Phone</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.phone}
+            </Col>
+          </Row>
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Email</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.email}
+            </Col>
+          </Row>
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Address</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.address}
+            </Col>
+          </Row>
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Specialization</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.specialization}
+            </Col>
+          </Row>
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Experience</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.experience} Years
+            </Col>
+          </Row>
+
+          <Row className="mb-2">
+            <Col xs={5}>
+              <strong>Fees</strong>
+            </Col>
+
+            <Col xs={7}>
+              ₹ {doctor.fees}
+            </Col>
+          </Row>
+
+          <Row className="mb-4">
+            <Col xs={5}>
+              <strong>Timings</strong>
+            </Col>
+
+            <Col xs={7}>
+              {doctor.timings}
+            </Col>
+          </Row>
+
+          <div className="d-grid">
+
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={handleShow}
+            >
+              Book Now
+            </Button>
+
+          </div>
+
+        </Card.Body>
+
+      </Card>

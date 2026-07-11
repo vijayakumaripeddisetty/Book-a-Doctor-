@@ -1,0 +1,29 @@
+                {/* ===============================
+                    Submit Button
+                =============================== */}
+
+                <Row className="mt-4">
+                  <Col className="text-center">
+
+                    <Button
+                      type="primary"
+                      htmlType="submit"
+                      size="large"
+                    >
+                      Apply Now
+                    </Button>
+
+                  </Col>
+                </Row>
+
+              </Form>
+
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default ApplyDoctor;

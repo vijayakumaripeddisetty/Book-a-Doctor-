@@ -1,0 +1,99 @@
+import React, { useState } from "react";
+import axios from "axios";
+import { message } from "antd";
+import {
+  Card,
+  Button,
+  Modal,
+  Form,
+  Row,
+  Col,
+} from "react-bootstrap";
+
+const DoctorList = ({
+  doctor,
+  userdata,
+  userDoctorId,
+}) => {
+
+  const [show, setShow] = useState(false);
+
+  const [dateTime, setDateTime] = useState("");
+
+  const [documentFile, setDocumentFile] = useState(null);
+
+  // Open Modal
+  const handleShow = () => {
+    setShow(true);
+  };
+
+  // Close Modal
+  const handleClose = () => {
+    setShow(false);
+    setDateTime("");
+    setDocumentFile(null);
+  };
+
+  // Prevent selecting past date/time
+  const today = new Date()
+    .toISOString()
+    .slice(0, 16);
+
+  // Book Appointment
+  const handleBook = async (e) => {
+    e.preventDefault();
+
+    if (!dateTime) {
+      message.error("Please select appointment date.");
+      return;
+    }
+
+    if (!documentFile) {
+      message.error("Please upload your document.");
+      return;
+    }
+
+    const formData = new FormData();
+
+    formData.append("userId", userDoctorId);
+    formData.append("doctorId", doctor._id);
+    formData.append("doctorName", doctor.fullName);
+    formData.append("userName", userdata.fullName);
+    formData.append("date", dateTime);
+    formData.append("document", documentFile);
+
+    try {
+
+      const response = await axios.post(
+        "http://localhost:8001/api/appointment/bookappointment",
+        formData,
+        {
+          headers: {
+            Authorization:
+              `Bearer ${localStorage.getItem("token")}`,
+            "Content-Type":
+              "multipart/form-data",
+          },
+        }
+      );
+
+      if (response.data.success) {
+
+        message.success(response.data.message);
+
+        handleClose();
+
+      } else {
+
+        message.error(response.data.message);
+
+      }
+
+    } catch (error) {
+
+      console.log(error);
+
+      message.error("Booking failed.");
+
+    }
+  };

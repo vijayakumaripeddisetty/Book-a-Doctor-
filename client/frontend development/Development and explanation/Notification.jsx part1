@@ -1,0 +1,133 @@
+import React, { useEffect, useState } from "react";
+import { Tabs, message } from "antd";
+import { Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
+const Notification = () => {
+  const navigate = useNavigate();
+
+  // ==========================
+  // State
+  // ==========================
+
+  const [user, setUser] = useState(null);
+
+  // ==========================
+  // Load User
+  // ==========================
+
+  useEffect(() => {
+    const userdata = JSON.parse(localStorage.getItem("userData"));
+
+    if (userdata) {
+      setUser(userdata);
+    }
+  }, []);
+
+  // ==========================
+  // Mark All as Read
+  // ==========================
+
+  const markAllRead = () => {
+    if (!user) return;
+
+    const updatedUser = {
+      ...user,
+      seennotification: [
+        ...(user.seennotification || []),
+        ...(user.notification || []),
+      ],
+      notification: [],
+    };
+
+    setUser(updatedUser);
+
+    localStorage.setItem(
+      "userData",
+      JSON.stringify(updatedUser)
+    );
+
+    message.success("All notifications marked as read.");
+  };
+
+  // ==========================
+  // Delete Read Notifications
+  // ==========================
+
+  const deleteAllRead = () => {
+    if (!user) return;
+
+    const updatedUser = {
+      ...user,
+      seennotification: [],
+    };
+
+    setUser(updatedUser);
+
+    localStorage.setItem(
+      "userData",
+      JSON.stringify(updatedUser)
+    );
+
+    message.success("Read notifications deleted.");
+  };
+
+  // ==========================
+  // Tabs
+  // ==========================
+
+  const items = [
+    {
+      key: "1",
+      label: "Unread Notifications",
+
+      children: (
+        <>
+          <div className="text-end mb-3">
+            <Button
+              variant="success"
+              onClick={markAllRead}
+            >
+              Mark All Read
+            </Button>
+          </div>
+
+          {user?.notification?.length > 0 ? (
+
+            user.notification.map((notify, index) => (
+              <Card
+                key={index}
+                className="mb-3 shadow-sm"
+                onClick={() =>
+                  navigate(notify.onClickPath)
+                }
+                style={{
+                  cursor: "pointer",
+                }}
+              >
+                <Card.Body>
+
+                  <h5>
+                    {notify.message}
+                  </h5>
+
+                  <small className="text-muted">
+                    Click to view
+                  </small>
+
+                </Card.Body>
+              </Card>
+            ))
+
+          ) : (
+
+            <Card>
+              <Card.Body className="text-center">
+                No Unread Notifications
+              </Card.Body>
+            </Card>
+
+          )}
+        </>
+      ),
+    },

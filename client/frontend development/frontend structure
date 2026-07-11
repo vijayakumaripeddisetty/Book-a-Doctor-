@@ -1,0 +1,136 @@
+
+BOOK A DOCTOR
+│
+├── 🏠 Home
+│   ├── Hero Banner
+│   │   ├── Search Doctor
+│   │   ├── Search by Specialty
+│   │   └── Book Appointment Button
+│   │
+│   ├── Top Specialties
+│   │   ├── General Physician
+│   │   ├── Dentist
+│   │   ├── Cardiologist
+│   │   ├── Dermatologist
+│   │   ├── Neurologist
+│   │   └── Orthopedic
+│   │
+│   ├── Featured Doctors
+│   ├── Health Services
+│   ├── Patient Reviews
+│   └── Footer
+│
+├── 🔐 Authentication
+│   ├── Login
+│   ├── Register
+│   ├── Forgot Password
+│   └── OTP Verification
+│
+├── 👨‍⚕️ Doctors
+│   ├── Doctor List
+│   ├── Filter
+│   │   ├── Specialty
+│   │   ├── Experience
+│   │   ├── Gender
+│   │   ├── Rating
+│   │   └── Fees
+│   │
+│   ├── Doctor Profile
+│   │   ├── Photo
+│   │   ├── About
+│   │   ├── Qualifications
+│   │   ├── Experience
+│   │   ├── Available Slots
+│   │   ├── Reviews
+│   │   └── Book Appointment
+│
+├── 📅 Appointment
+│   ├── Select Date
+│   ├── Select Time Slot
+│   ├── Patient Details
+│   ├── Payment
+│   └── Confirmation
+│
+├── 👤 Patient Dashboard
+│   ├── My Profile
+│   ├── Upcoming Appointments
+│   ├── Appointment History
+│   ├── Medical Records
+│   ├── Prescriptions
+│   └── Notifications
+│
+├── 💳 Payments
+│   ├── Payment Methods
+│   ├── Transaction History
+│   ├── Download Invoice
+│   └── Refund Status
+│
+├── ⭐ Reviews
+│   ├── Give Rating
+│   ├── Write Review
+│   └── View Reviews
+│
+├── 📞 Support
+│   ├── Help Center
+│   ├── FAQs
+│   ├── Contact Us
+│   └── Live Chat
+│
+└── ⚙ Settings
+    ├── Edit Profile
+    ├── Change Password
+    ├── Language
+    ├── Notification Settings
+    └── Logout
+
+
+--------------------------------------------------------
+ LOGO                    Search Doctors      Login
+--------------------------------------------------------
+ Home | Doctors | Specialties | Appointments | Profile
+--------------------------------------------------------
+
++------------------------------------------------------+
+|                                                      |
+|   Find & Book the Best Doctors Near You              |
+|                                                      |
+| [Search Doctor__________________] [Search]           |
+|                                                      |
++------------------------------------------------------+
+
+Popular Specialties
+
+┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
+│ Dentist │ │ Cardio  │ │ Skin    │ │ Neuro   │
+└─────────┘ └─────────┘ └─────────┘ └─────────┘
+
+Featured Doctors
+
+┌─────────────────────────────────────────────┐
+│ 👨‍⚕️ Dr. John Smith                          │
+│ Cardiologist                                │
+│ ⭐ 4.9   15 Years Experience                │
+│ Fee: $50                                   │
+│ [View Profile]   [Book Appointment]        │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│ 👩‍⚕️ Dr. Sarah Lee                           │
+│ Dentist                                     │
+│ ⭐ 4.8                                      │
+│ Fee: $40                                   │
+│ [View Profile]   [Book Appointment]        │
+└─────────────────────────────────────────────┘
+
+--------------------------------------------------------
+ Patient Reviews
+--------------------------------------------------------
+
+⭐⭐⭐⭐⭐ "Very professional doctor."
+
+⭐⭐⭐⭐⭐ "Easy booking process."
+
+--------------------------------------------------------
+ Footer
+ About | Contact | Privacy | Terms
+--------------------------------------------------------
