@@ -1,10 +1,10 @@
-# 🩺 Book a Doctor – Online Doctor Appointment Management System
+#  Book a Doctor – Online Doctor Appointment Management System
 
 A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application that enables patients to search for doctors, book appointments, manage consultations, maintain medical records, and receive healthcare services through a secure and user-friendly platform.
 
 ---
 
-# 📖 Overview
+#  Overview
 
 **Book a Doctor** is designed to simplify the healthcare appointment process by allowing patients to search for doctors based on specialization, schedule appointments, manage bookings, receive notifications, and maintain their medical records online. Doctors can manage their schedules, view appointments, update consultation details, and communicate with patients.
 
@@ -12,9 +12,9 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 
 ---
 
-# 🚀 Features
+#  Features
 
-## 👤 User Management
+## User Management
 
 * User Registration
 * User Login
@@ -23,7 +23,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 * Change Password
 * Forgot Password
 
-## 👨‍⚕️ Doctor Management
+##  Doctor Management
 
 * Doctor Registration
 * Doctor Login
@@ -33,7 +33,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 * Appointment Management
 * Consultation History
 
-## 📅 Appointment Management
+##  Appointment Management
 
 * Search Doctors
 * Filter by Specialization
@@ -43,7 +43,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 * Appointment Status Tracking
 * Appointment History
 
-## 🏥 Healthcare Services
+##  Healthcare Services
 
 * Patient Medical Records
 * Prescription Management
@@ -52,7 +52,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 * Online Consultation Support
 * Patient Feedback & Ratings
 
-## 📊 Dashboard
+##  Dashboard
 
 ### Patient Dashboard
 
@@ -72,7 +72,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 
 ---
 
-# 🔒 Security
+#  Security
 
 * JWT Authentication
 * Password Encryption using bcryptjs
@@ -83,7 +83,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 
 ---
 
-# 🛠 Technology Stack
+# Technology Stack
 
 ## Frontend
 
@@ -110,7 +110,7 @@ The project follows the **Model-View-Controller (MVC)** architecture, providing 
 
 ---
 
-# 🏗 Project Architecture
+# Project Architecture
 
 ```text
 Book-a-Doctor
@@ -146,7 +146,7 @@ Book-a-Doctor
 
 ---
 
-# ⚙ Installation
+# Installation
 
 ## Clone Repository
 
@@ -162,7 +162,7 @@ cd Book-a-Doctor
 
 ---
 
-## 📦 Install Frontend Dependencies
+## Install Frontend Dependencies
 
 ```bash
 cd client
@@ -171,7 +171,7 @@ npm install
 
 ---
 
-## 📦 Install Backend Dependencies
+##  Install Backend Dependencies
 
 Open another terminal.
 
@@ -182,7 +182,7 @@ npm install
 
 ---
 
-## 🗄 Configure MongoDB
+##  Configure MongoDB
 
 Create a `.env` file inside the **server** folder.
 
@@ -196,7 +196,7 @@ JWT_SECRET=yourSecretKey
 
 ---
 
-# ▶ Running the Application
+#  Running the Application
 
 ## Start Backend
 
@@ -224,7 +224,7 @@ npm run dev
 
 ---
 
-# 🌐 Application URLs
+# Application URLs
 
 ## Frontend
 
@@ -246,7 +246,7 @@ mongodb://127.0.0.1:27017
 
 ---
 
-# 🔄 Application Workflow
+#  Application Workflow
 
 ```text
 Patient / Doctor
@@ -278,7 +278,7 @@ React UI Updates
 
 ---
 
-# 📁 Folder Structure
+#  Folder Structure
 
 ## Client
 
@@ -305,7 +305,7 @@ server.js
 
 ---
 
-# 📌 Main Modules
+#  Main Modules
 
 * User Authentication
 * Doctor Registration
@@ -322,7 +322,7 @@ server.js
 
 ---
 
-# 🔒 Security Features
+#  Security Features
 
 * JWT Authentication
 * Password Hashing using bcryptjs
@@ -334,7 +334,7 @@ server.js
 
 ---
 
-# 🚀 Future Enhancements
+#  Future Enhancements
 
 * AI-Based Doctor Recommendation
 * Video Consultation
@@ -350,7 +350,7 @@ server.js
 
 ---
 
-# 📚 Documentation
+#  Documentation
 
 The repository contains detailed documentation for every development stage:
 
@@ -371,13 +371,13 @@ The repository contains detailed documentation for every development stage:
 
 ---
 
-# 🎯 Expected Outcome
+#  Expected Outcome
 
 The **Book a Doctor** application enables patients to conveniently search for doctors, schedule appointments, manage consultations, maintain medical records, and receive quality healthcare services online. Doctors can efficiently organize appointments, manage patient information, and provide a better healthcare experience. The MERN Stack architecture ensures a scalable, secure, and maintainable full-stack healthcare management system.
 
 ---
 
-# 👨‍💻 Authors
+#  Authors
 
 * PEDDISETTY VIJAYAKUMARI
 * PUVVULA KISHAN
@@ -389,12 +389,8 @@ The **Book a Doctor** application enables patients to conveniently search for do
 
 ---
 
-# 📄 License
+#  License
 
 This project is developed for educational and learning purposes as part of a **MERN Stack Full-Stack Development Project**.
 
 ---
-
-# ⭐ Support
-
-If you found this project useful, consider giving it a **⭐ Star** on GitHub!
