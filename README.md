@@ -1,10 +1,10 @@
-# 🏥 Book a Doctor App
+#  Book a Doctor App
 
 A modern healthcare appointment booking platform that connects **patients**, **doctors**, and **administrators** through a secure and user-friendly system. The application simplifies the process of discovering doctors, scheduling appointments, managing medical records, and improving healthcare accessibility.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The **Book a Doctor App** is designed to digitize the healthcare appointment process, reducing the time and effort required for patients to find and consult doctors. It provides an efficient platform where patients can book appointments, doctors can manage their schedules, and administrators can oversee the entire system.
 
@@ -19,9 +19,9 @@ The platform focuses on:
 
 ---
 
-## ✨ Features
+##  Features
 
-### 👤 Patient
+###  Patient
 
 - Register and Login
 - Browse Doctors
@@ -33,7 +33,7 @@ The platform focuses on:
 - View Appointment History
 - Receive Appointment Notifications
 
-### 👨‍⚕️ Doctor
+###  Doctor
 
 - Secure Authentication
 - Manage Profile
@@ -43,7 +43,7 @@ The platform focuses on:
 - Access Patient Medical Records
 - Update Appointment Status
 
-### 🛠️ Administrator
+###  Administrator
 
 - Manage Patients
 - Manage Doctors
@@ -54,7 +54,7 @@ The platform focuses on:
 
 ---
 
-## 🚀 Key Benefits
+##  Key Benefits
 
 - Fast and easy appointment booking
 - Reduced patient waiting time
@@ -66,7 +66,7 @@ The platform focuses on:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React.js
@@ -93,7 +93,7 @@ The platform focuses on:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Book-a-Doctor-App/
@@ -119,7 +119,7 @@ Book-a-Doctor-App/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Clone the repository
 
@@ -148,8 +148,7 @@ npm install
 ```
 
 ---
-
-## ▶️ Run the Project
+##  Run the Project
 
 ### Backend
 
@@ -167,7 +166,7 @@ npm start
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file inside the **server** directory.
 
@@ -185,7 +184,7 @@ EMAIL_PASS=your_password
 
 ---
 
-## 📷 Screenshots
+##  Screenshots
 
 Add screenshots of the application here.
 
@@ -201,7 +200,7 @@ Add screenshots of the application here.
 
 ---
 
-## 🔒 Security
+##  Security
 
 - JWT Authentication
 - Password Encryption
@@ -212,7 +211,7 @@ Add screenshots of the application here.
 
 ---
 
-## 🚧 Future Improvements
+##  Future Improvements
 
 - Online Video Consultation
 - Payment Gateway Integration
@@ -225,7 +224,7 @@ Add screenshots of the application here.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome!
 
@@ -252,7 +251,7 @@ git push origin feature/new-feature
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
@@ -260,6 +259,3 @@ This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Support
-
-If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
